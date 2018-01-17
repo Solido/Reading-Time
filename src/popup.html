@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Read time estimation</title>
+    <style>
+    body {
+      overflow: hidden;
+      margin: 8px;
+      padding: 0px;
+      background: rgb(255, 236, 214);
+    }
+    div:first-child {
+      margin-top: 0px;
+    }
+    div {
+      cursor: pointer;
+      text-align: center;
+      padding: 1px 3px;
+      font-family: sans-serif;
+      font-size: 1.2em;
+      width: 200px;
+      margin-top: 1px;
+    }
+    div:hover {
+      background: #aaaaaa;
+    }
+    count {
+        font-size: 30px;
+    }
+    wordsPerMin {
+        font-size: 10px;
+    }
+    </style>
+  </head>
+  <body>
+      <div>
+            <div><span id="count">-</span> words</div>
+            <div>
+                <span id="reftime">-</span> minutes
+            </div>
+            at <span id="wordsPerMin">-</span> words/min
+      </div>
+    
+  </body>
+  <script src="popup.js"></script>
+</html>
